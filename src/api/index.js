@@ -27,3 +27,18 @@ export const reqUser = () => ajax('/api/userinfo')
 /**
 10、请 求 登 出 */ 
 export const reqLogout = () => ajax('/api/logout')
+
+/** 
+* 获 取 商 家 信 息 
+*/ 
+export const reqShopInfo = () => ajax('/info')
+/** 
+* 获 取 商 家 评 价 数 组 
+*/ 
+export const reqShopRatings = () => ajax('/ratings')
+/** 
+* 获 取 商 家 商 品 数 组 
+*/ 
+export const reqShopGoods = () => ajax('/goods')
+
+export const reqSearchShop = (geohash, keyword) => ajax('/api/search_shops', {geohash, keyword})
